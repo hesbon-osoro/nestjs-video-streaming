@@ -17,36 +17,38 @@ Implementation of Video Streaming in Nest js and Next js, with defined some conc
 
 ```bash
 # Clone the repo
-$ git clone https://github.com/hesbon-osoro/nestjs-video-streaming.git
+git clone https://github.com/hesbon-osoro/nestjs-video-streaming.git
 
 # Navigate to directory
-$ cd nestjs-video-streaming
+cd nestjs-video-streaming
 
-$ npm install
+npm install
 ```
 
 ## Running the app
 
 ```bash
 # development
-$ npm run start
+npm run start
 
 # watch mode
-$ npm run start:dev
+npm run start:dev
 
 # production mode
-$ npm run start:prod
+npm run start:prod
 ```
 
 ## Test
 
 ```bash
 # unit tests
-$ npm run test
+npm run test
 
 # e2e tests
-$ npm run test:e2e
+npm run test:e2e
 
 # test coverage
-$ npm run test:cov
+npm run test:cov
 ```
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/wazimu)
