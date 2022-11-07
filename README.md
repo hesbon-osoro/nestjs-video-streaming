@@ -51,4 +51,8 @@ npm run test:e2e
 npm run test:cov
 ```
 
+## Client code
+
+After starting the Server, open the NextJS [`Frontend`](https://github.com/hesbon-osoro/nextjs-video-streaming)
+
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/wazimu)
