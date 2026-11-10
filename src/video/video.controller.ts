@@ -6,10 +6,27 @@ import {
 	HttpStatus,
 	Header,
 	Headers,
+	NotFoundException,
 } from '@nestjs/common';
 import { VideoService } from './video.service';
-import { statSync, createReadStream } from 'fs';
+import { existsSync, statSync, createReadStream } from 'fs';
+import { join } from 'path';
 import { Response } from 'express';
+
+const ASSETS = join(process.cwd(), 'assets');
+
+/** "bytes=start-end" (end optional) as an inclusive byte range within the file, or null if unusable. */
+export function parseRange(
+	header: string,
+	size: number
+): { start: number; end: number } | null {
+	const m = /^bytes=(\d+)-(\d*)$/.exec(header.trim());
+	if (!m) return null;
+	const start = parseInt(m[1], 10);
+	const end = m[2] ? Math.min(parseInt(m[2], 10), size - 1) : size - 1;
+	if (start >= size || end < start) return null;
+	return { start, end };
+}
 
 @Controller('video')
 export class VideoController {
@@ -20,17 +37,23 @@ export class VideoController {
 	@Header('Content-Type', 'video/mp4')
 	async getStreamVideo(
 		@Param('id') id: string,
-		@Headers() headers,
+		@Headers('range') videoRange: string | undefined,
 		@Res() res: Response
 	) {
-		const videoPath = `assets/${id}.mp4`;
+		// Only numeric ids, so a request can never point outside assets/.
+		if (!/^\d+$/.test(id)) throw new NotFoundException();
+		const videoPath = join(ASSETS, `${id}.mp4`);
+		if (!existsSync(videoPath)) throw new NotFoundException();
 		const { size } = statSync(videoPath);
-		const videoRange = headers.range;
 		if (videoRange) {
-			const parts = videoRange.replace(/bytes=/, '').split('-');
-			const start = parseInt(parts[0], 10);
-			const end = parts[1] ? parseInt(parts[1], 10) : size - 1;
-			const chunkSize = end - start + 1;
+			const range = parseRange(videoRange, size);
+			if (!range) {
+				res.writeHead(HttpStatus.REQUESTED_RANGE_NOT_SATISFIABLE, {
+					'Content-Range': `bytes */${size}`,
+				}); //416
+				return res.end();
+			}
+			const { start, end } = range;
 			const readStreamfile = createReadStream(videoPath, {
 				start,
 				end,
@@ -38,7 +61,7 @@ export class VideoController {
 			});
 			const head = {
 				'Content-Range': `bytes ${start}-${end}/${size}`,
-				'Content-Length': chunkSize,
+				'Content-Length': end - start + 1,
 			};
 			res.writeHead(HttpStatus.PARTIAL_CONTENT, head); //206
 			readStreamfile.pipe(res);
