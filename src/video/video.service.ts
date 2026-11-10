@@ -25,7 +25,7 @@ const allVideos = [
 
 @Injectable()
 export class VideoService {
-	create(createVideoDto: CreateVideoDto) {
+	create(_createVideoDto: CreateVideoDto) {
 		return 'This action adds a new video';
 	}
 
@@ -42,11 +42,11 @@ export class VideoService {
 		}
 	}
 
-	update(id: number, updateVideoDto: UpdateVideoDto) {
+	update(_id: number, _updateVideoDto: UpdateVideoDto) {
 		return `This action is not implemented`;
 	}
 
-	remove(id: number) {
+	remove(_id: number) {
 		return `This action is not implemented`;
 	}
 }
