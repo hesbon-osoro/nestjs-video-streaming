@@ -1,73 +1,82 @@
 {
-	"name": "nestjs-video-streaming",
-	"version": "0.0.1",
-	"description": "",
-	"author": "Hesbon Osoro <hesbonosoro1@gmail.com>",
-	"private": true,
-	"license": "UNLICENSED",
-	"scripts": {
-		"build": "nest build",
-		"format": "prettier --write .",
-		"start": "nest start",
-		"start:dev": "nest start --watch",
-		"start:debug": "nest start --debug --watch",
-		"start:prod": "node dist/main",
-		"lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
-		"test": "jest",
-		"test:watch": "jest --watch",
-		"test:cov": "jest --coverage",
-		"test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-		"test:e2e": "jest --config ./test/jest-e2e.json"
-	},
-	"dependencies": {
-		"@nestjs/common": "^11.2.9",
-		"@nestjs/core": "^11.2.9",
-		"@nestjs/mapped-types": "^2.1.1",
-		"@nestjs/platform-express": "^11.2.9",
-		"reflect-metadata": "^0.2.2",
-		"rxjs": "^7.8.2"
-	},
-	"devDependencies": {
-		"@nestjs/cli": "^11.0.24",
-		"@nestjs/schematics": "^11.1.0",
-		"@nestjs/testing": "^11.2.9",
-		"@types/express": "^5.0.6",
-		"@types/jest": "^30.0.0",
-		"@types/node": "^22.0.0",
-		"@types/supertest": "^6.0.3",
-		"@typescript-eslint/eslint-plugin": "^8.72.2",
-		"@typescript-eslint/parser": "^8.72.2",
-		"eslint": "^8.57.1",
-		"eslint-config-prettier": "^10.1.8",
-		"eslint-plugin-prettier": "^5.5.7",
-		"jest": "^30.5.2",
-		"prettier": "^3.9.10",
-		"source-map-support": "^0.5.21",
-		"supertest": "^7.3.2",
-		"ts-jest": "^29.4.15",
-		"ts-loader": "^9.6.2",
-		"ts-node": "^10.9.2",
-		"tsconfig-paths": "^4.2.0",
-		"typescript": "^5.9.3"
-	},
-	"jest": {
-		"moduleFileExtensions": [
-			"js",
-			"json",
-			"ts"
-		],
-		"rootDir": "src",
-		"testRegex": ".*\\.spec\\.ts$",
-		"transform": {
-			"^.+\\.(t|j)s$": "ts-jest"
-		},
-		"collectCoverageFrom": [
-			"**/*.(t|j)s"
-		],
-		"coverageDirectory": "../coverage",
-		"testEnvironment": "node"
-	},
-	"engines": {
-		"node": ">=20"
-	}
+  "name": "nestjs-video-streaming",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Hesbon Osoro <hesbonosoro1@gmail.com>",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "nest build",
+    "format": "prettier --write .",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "start:prod": "node dist/main",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "test:e2e": "jest --config ./test/jest-e2e.json"
+  },
+  "dependencies": {
+    "@nestjs/common": "^11.2.9",
+    "@nestjs/core": "^11.2.9",
+    "@nestjs/mapped-types": "^2.1.1",
+    "@nestjs/platform-express": "^11.2.9",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.24",
+    "@nestjs/schematics": "^11.1.0",
+    "@nestjs/testing": "^11.2.9",
+    "@types/express": "^5.0.6",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^22.0.0",
+    "@types/supertest": "^6.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.72.2",
+    "@typescript-eslint/parser": "^8.72.2",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.7",
+    "jest": "^30.5.2",
+    "prettier": "^3.9.10",
+    "source-map-support": "^0.5.21",
+    "supertest": "^7.3.2",
+    "ts-jest": "^29.4.15",
+    "ts-loader": "^9.6.2",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.9.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "resolutions": {
+    "**/@typescript-eslint/typescript-estree/minimatch": "^11.0.1",
+    "**/@nestjs/cli/glob/minimatch": "^11.0.1",
+    "**/@jest/reporters/glob/minimatch": "^11.0.1",
+    "**/jest-config/glob/minimatch": "^11.0.1",
+    "**/jest-runtime/glob/minimatch": "^11.0.1",
+    "**/test-exclude/minimatch": "^11.0.1",
+    "**/test-exclude/glob/minimatch": "^11.0.1"
+  }
 }
