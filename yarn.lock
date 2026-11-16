@@ -904,10 +904,10 @@
     webpack "5.106.2"
     webpack-node-externals "3.0.0"
 
-"@nestjs/common@^11.2.9":
-  version "11.2.9"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-11.2.9.tgz#e3f10b636a6bf43b1df4db5463f6bbee09fdf5b2"
-  integrity sha512-jAvrmVSvleOtJ3OU6MkgT8o+AADysGg8ZNg9yIO1Y0dHG254cjUS7rk+InTZbYqnHTE+Ylsyl40njhCcCoBNWg==
+"@nestjs/common@^11.2.10":
+  version "11.2.10"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-11.2.10.tgz#f0eb550a5b3caa96c451a3475061794292dc5c79"
+  integrity sha512-QJLY7Bms6lKQbZ3Iq34PTh0EI3JNlMaTWzoJDd3xWqkRhT0d320eUxSL3f8Tb9ywINptnhjPTwUD9NHw71jzYA==
   dependencies:
     uid "2.0.2"
     file-type "21.3.4"
@@ -915,10 +915,10 @@
     load-esm "1.0.3"
     tslib "2.8.1"
 
-"@nestjs/core@^11.2.9":
-  version "11.2.9"
-  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-11.2.9.tgz#d3afed1ee37bb055828663aef2606dcf9f15d66e"
-  integrity sha512-R75IDoUSoseaKrSR1kXYNhhrrVtR4Ms17nyyGHkY5PIav8IAimBWMKeeqhI2vjyhi0usoP6F3/9h0C/qeri13g==
+"@nestjs/core@^11.2.10":
+  version "11.2.10"
+  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-11.2.10.tgz#f29f6112a936edc52ae848e3e9317b7b71f3c734"
+  integrity sha512-3tzOVDoo701CNCb+J6JYJvXjZJLpdQnhMjjKg8bM5ePqqteYdyyvCXJzGcRpnTvjTlfDing+H7X9jp57TfWhRQ==
   dependencies:
     uid "2.0.2"
     fast-safe-stringify "2.1.1"
@@ -931,10 +931,10 @@
   resolved "https://registry.yarnpkg.com/@nestjs/mapped-types/-/mapped-types-2.1.1.tgz#9530ac3250ab433ba6ef831e9dd5d483f5fc8144"
   integrity sha512-SCCoMEJ6jdeI5h/N+KCVF1+pmg/hmEkNA5nHTS8Gvww7T/LCl4o1gFLinw2iQ60w7slFkszHcGLKGdazVI4F8A==
 
-"@nestjs/platform-express@^11.2.9":
-  version "11.2.9"
-  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-11.2.9.tgz#b5666ead58a609a500f31b3f1e3f2b479c7e2981"
-  integrity sha512-mL9n54HYQhuQr6DJaGDQTjmiI6lWcrhgTa6U++7xrQySSf5qn2FwTyJcm3N9yfb8kea/KHYvFDf+As+0+vnaQw==
+"@nestjs/platform-express@^11.2.10":
+  version "11.2.10"
+  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-11.2.10.tgz#21f3e57c41a24a22558c1ae396f1efdedc845e02"
+  integrity sha512-piXubUA2wyq/iEj4yN4rRF13uZcyzKVq6D/Z5RoBFdgvn0MB0qRfqF2ZXvPj4aepyDDykGXL45m0kRnxZyx2lQ==
   dependencies:
     cors "2.8.6"
     express "5.2.1"
@@ -953,10 +953,10 @@
     jsonc-parser "3.3.1"
     pluralize "8.0.0"
 
-"@nestjs/testing@^11.2.9":
-  version "11.2.9"
-  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-11.2.9.tgz#32179e45f2e078fa224b72e47dea104d830880bd"
-  integrity sha512-7FNQh/nAzTpMh1YJzfiojqh6oATjAgdoKvFKFXPVx84g2pOB6wSe8T+PziUoUArudj4gA++67m+4qHmnx/zNwA==
+"@nestjs/testing@^11.2.10":
+  version "11.2.10"
+  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-11.2.10.tgz#4ea03673fe46b8be91c493874475f5e3a1958713"
+  integrity sha512-7rp2Zs+T5pP55yGDXDBcIP+IBYxI4CglnTi5TXfzfrp1Qr9a15rwov6VVog6OtuP8BYcGvCgvEzb1kqtHoXjfg==
   dependencies:
     tslib "2.8.1"
 
@@ -4104,10 +4104,10 @@ prettier-linter-helpers@^1.0.1:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@^3.9.10:
-  version "3.9.10"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.9.10.tgz#ac378e432f1a7381518f2e080816bbaefa38d585"
-  integrity sha512-skGHTH1Yb9QvaTC4hWnRTzEYtCpApF0UMBPz+t/0ZPzP8ihefo/btKd+QA7pUE0fEwA1SbS/NmhyEcstdXOIdA==
+prettier@^3.10.1:
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.10.1.tgz#00b1c1872f9650ec22093d5bdafdca0fe6760f77"
+  integrity sha512-70vp3ZUYoPlFbF9uiTdXHUUCGEIp7d4+6p+8DYbkm2jP7x/3i/paXVF6dopSI3zd/CEitrZN1rc4i85xWmmXlg==
 
 pretty-format@30.5.1, pretty-format@^30.0.0:
   version "30.5.1"
@@ -4454,7 +4454,16 @@ string-length@^4.0.2:
     char-regex "^1.0.2"
     strip-ansi "^6.0.0"
 
-"string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
+"string-width-cjs@npm:string-width@^4.2.0":
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
+  integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
+  dependencies:
+    emoji-regex "^8.0.0"
+    is-fullwidth-code-point "^3.0.0"
+    strip-ansi "^6.0.1"
+
+string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -4479,7 +4488,14 @@ string_decoder@^1.1.1:
   dependencies:
     safe-buffer "~5.2.0"
 
-"strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+"strip-ansi-cjs@npm:strip-ansi@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
+  integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
+  dependencies:
+    ansi-regex "^5.0.1"
+
+strip-ansi@^6.0.0, strip-ansi@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
@@ -4941,7 +4957,7 @@ wordwrap@^1.0.0:
   resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-1.0.0.tgz#27584810891456a4171c8d0226441ade90cbcaeb"
   integrity sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==
 
-"wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+"wrap-ansi-cjs@npm:wrap-ansi@^7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
@@ -4954,6 +4970,15 @@ wrap-ansi@^6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-6.2.0.tgz#e9393ba07102e6c91a3b221478f0257cd2856e53"
   integrity sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==
+  dependencies:
+    ansi-styles "^4.0.0"
+    string-width "^4.1.0"
+    strip-ansi "^6.0.0"
+
+wrap-ansi@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
+  integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
   dependencies:
     ansi-styles "^4.0.0"
     string-width "^4.1.0"
